@@ -2,8 +2,7 @@ from TikTokAPI import TikTokAPI
 
 
 class TikTokDL:
-    def __init__(self, link, video_id, save_path):
-        self.link = link
+    def __init__(self, video_id, save_path):
         self.video_id = video_id
         self.save_path = save_path
 
@@ -20,7 +19,6 @@ cookie = {
 api = TikTokAPI(cookie=cookie)
 
 tikTokDl = TikTokDL(
-    link=input("Enter the link of a video"),
     video_id=input("Enter the video_id"),
     save_path=input("Enter the save_path (default /tiktokdl/downloads")
 )
